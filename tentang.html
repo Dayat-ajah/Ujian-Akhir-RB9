@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Website</title>
+    <link rel="stylesheet" href="tentang.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="site-nav">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          &#9776;
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="produk.html">Kitab Lainnya</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+      </nav>
+    </header>
+    <section class="tentang">
+      <h1>Tentang Website Penjualan Kitab</h1>
+
+      <p>
+        Website penjualan kitab ini dibuat untuk memudahkan masyarakat dalam
+        mencari dan membeli kitab-kitab Islam secara online. Website ini
+        menyediakan berbagai kitab seperti kitab fiqih, tafsir, hadits, nahwu,
+        dan tasawuf dan lain lainnya.
+      </p>
+
+      <p>
+        Tujuan dari website ini adalah membantu para santri, pelajar, dan
+        masyarakat umum agar lebih mudah mendapatkan kitab yang dibutuhkan untuk
+        belajar agama Islam tanpa harus datang langsung ke toko buku.
+      </p>
+
+      <p>
+        Dengan adanya website ini diharapkan dapat meningkatkan minat membaca
+        serta mempermudah proses jual beli kitab secara online dengan cepat dan
+        praktis.
+      </p>
+    </section>
+
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      navToggle.addEventListener("click", () => {
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!expanded));
+        siteNav.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>

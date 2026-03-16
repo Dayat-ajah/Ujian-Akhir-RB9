@@ -1,0 +1,142 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+h1{
+            color: rgb(204, 136, 9);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+.tentang {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tentang h1 {
+  margin-bottom: 20px;
+}
+
+.tentang img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tentang p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .tentang {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .tentang img {
+    width: 180px;
+  }
+
+  .tentang p {
+    font-size: 15px;
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .tentang {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .tentang h1 {
+    font-size: 24px;
+  }
+
+  .tentang img {
+    width: 150px;
+  }
+
+  .tentang p {
+    font-size: 14px;
+  }
+}

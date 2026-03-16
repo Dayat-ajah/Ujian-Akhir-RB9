@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+    <link rel="stylesheet" href="produk.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          &#9776;
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="produk.html">kitab Lainnya</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="produk">
+      <h2>Kitab Lainnya</h2>
+
+      <div class="container">
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/9a/35/80/9a3580889efc6a0b80272d0ea68e7bcd.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Fathul Qorib</h3>
+          <p>Kitab fiqih dasar.</p>
+          <span>Rp120.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/72/8d/1d/728d1d02ba1089269fb4266e79c5f4b1.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Tafsir Jalalain</h3>
+          <p>Kitab tafsir Al-Qur'an.</p>
+          <span>Rp150.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/e3/e9/91/e3e99135a8c74f03616eeffdc53422e3.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Riyadhus Shalihin</h3>
+          <p>Kumpulan hadits Nabi.</p>
+          <span>Rp130.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/736x/7c/8f/ca/7c8fca42b6d401a9e52ad8d359827b13.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Bulughul Maram</h3>
+          <p>Kitab hadits hukum.</p>
+          <span>Rp125.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/ca/9a/15/ca9a15ad2003be527db38d53aab36e26.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Safinatun Najah</h3>
+          <p>Kitab fiqih dasar.</p>
+          <span>Rp90.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/c8/69/db/c869dbf5ad0e46162b79b2207855c22b.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Ta'lim Muta'allim</h3>
+          <p>Kitab adab menuntut ilmu.</p>
+          <span>Rp95.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/2d/a2/f0/2da2f07b90f7da80010ddfaac131f4e3.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Al Hikam</h3>
+          <p>Kitab tasawuf.</p>
+          <span>Rp110.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/2b/0d/59/2b0d598079d403f6b8b8133600126f36.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Jurumiyah</h3>
+          <p>Kitab nahwu dasar.</p>
+          <span>Rp85.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/78/7f/36/787f3615fe13b05e99803243b58d6289.jpg"
+            width="100px"
+            height="100px"
+          />
+          <h3>Kitab Alfiyah Ibnu Malik</h3>
+          <p>Kitab nahwu tingkat lanjut.</p>
+          <span>Rp140.000</span>
+          <button>Beli</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://i.pinimg.com/1200x/3c/d8/38/3cd838be11eaad50bf279c4186d89ca8.jpg"
+            width="100px"
+            height="100px "
+          />
+          <h3>Kitab Ihya Ulumuddin</h3>
+          <p>Kitab tasawuf karya Imam Ghazali.</p>
+          <span>Rp180.000</span>
+          <button>Beli</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      navToggle.addEventListener("click", () => {
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!expanded));
+        siteNav.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>

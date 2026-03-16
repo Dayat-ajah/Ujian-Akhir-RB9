@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <link rel="stylesheet" href="kontak.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="site-nav">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          &#9776;
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="produk.html">Kitab Lainnya</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="kontak">
+      <h1>Hubungi Kami</h1>
+
+      <p>
+        Jika ada pertanyaan tentang kitab yang dijual, silakan hubungi kami
+        melalui form berikut.
+      </p>
+
+      <form>
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan nama" />
+
+        <label>No Wa</label>
+        <input type="No Wa" placeholder="Masukkan No Wa" />
+
+        <label>Pesan</label>
+        <textarea placeholder="Tulis pesan anda"></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const siteNav = document.querySelector(".site-nav");
+
+      navToggle.addEventListener("click", () => {
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!expanded));
+        siteNav.classList.toggle("nav-open");
+      });
+
+      document
+        .getElementById("formKontak")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let nama = document.getElementById("nama").value;
+          let email = document.getElementById("email").value;
+          let pesan = document.getElementById("pesan").value;
+
+          if (nama === "" || email === "" || pesan === "") {
+            alert("Silakan isi semua data terlebih dahulu");
+          } else {
+            alert("Terima kasih " + nama + ", pesan anda sudah terkirim!");
+
+            document.getElementById("formKontak").reset();
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Toko Buku</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Toko Kitab Online</h1>
+
+      <nav class="site-nav">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          &#9776;
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="produk.html">Kitab Lainnya</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Selamat Datang di Toko Kitab Dayat Ajah</h2>
+      <p>
+        Kami menyediakan berbagai kitab menarik untuk menambah pengetahuan/ilmu
+        anda.
+      </p>
+      <section class="hero">
+      </section>
+      <section class="kategori">
+        <h2 style="color: rgb(41, 149, 14);">Kategori Kitab</h2>
+
+        <div class="kategori-container">
+          <div class="kategori-card">Fiqih</div>
+          <div class="kategori-card">Tauhid</div>
+          <div class="kategori-card">Hadits</div>
+        </div>
+      </section>
+
+      <section class="produk">
+        <h2>Kitab Populer</h2>
+
+        <div class="container">
+          <div class="card">
+            <img src="https://i.pinimg.com/1200x/fa/c3/a7/fac3a7b4c920f59a0fb534aa025656a8.jpg" alt="Kitab Fiqih" />
+            <h3>Kitab Fiqih</h3>
+            <p>Panduan hukum islam lengkap</p>
+            <span>Rp120.000</span>
+            <button>Beli Sekarang</button>
+          </div>
+
+          <div class="card">
+            <img src="https://i.pinimg.com/1200x/8d/4b/19/8d4b1963249ed6455acfa75ef81b2708.jpg" alt="Kitab Tauhid" />
+            <h3>Kitab Tauhid</h3>
+            <p>Belajar dasar keimanan</p>
+            <span>Rp95.000</span>
+            <button>Beli Sekarang</button>
+          </div>
+
+          <div class="card">
+            <img src="https://i.pinimg.com/1200x/6a/44/bf/6a44bfb5f0d61dd6ac57b495c54f0dc3.jpg" alt="kitab hadis"/>
+            <h3>Kitab Hadits</h3>
+            <p>Kumpulan hadits pilihan</p>
+            <span>Rp150.000</span>
+            <button>Beli Sekarang</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <h2>Belajar Agama Lebih Mudah</h2>
+        <p>Dapatkan kitab terbaik untuk menambah ilmumu</p>
+      </section>
+
+      <footer>
+        <p>© 2026 Toko Kitab Islami</p>
+      </footer>
+    </section>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('.site-nav');
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    siteNav.classList.toggle('nav-open');
+  });
+</script>
+
+</html>
